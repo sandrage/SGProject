@@ -1,0 +1,116 @@
+<html>
+<meta charset="UTF-8"> 
+
+<head>
+	<title>B lubby_G ame- The Story</title>
+	<link rel="stylesheet" type="text/css" href="blubby.css"/>
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	</head>
+	<body>
+		<header id="head">
+			<nav id="nav_container">
+
+				<img src="img/blubbyscritta.png" id="blubbyscritta"/>
+				<div id="navback">
+					<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="story.html">THE STORY</a></li>
+					<li><a href="game.html">THE GAME</a></li>
+					<li><a href="contactme.html">CONTACT ME</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="blubby">
+			<div class="flexslider">
+			<ul class="slides">
+				<li style="background: url(img/blubby1.jpg) center">
+					<div class="flex-caption">
+						<h1><a href="game.html">Try Blubby Game!</a></h1>
+					</div>
+				</li>
+				<li style="background: url(img/blubby2.jpg) center">
+						<div class="flex-caption">
+						<h1>New levels!!!</h1>
+						</div>
+				</li>
+			</ul>
+			</div>
+
+		</section>
+		<section id="content">
+
+			<h1>the story</h1>
+			<p>blubby game nasce come progetto di maturità nell'anno 2014. La progettazione iniziò nel novembre del 2013 e terminò nel maggio del 2014.
+			   Il gioco e' stato sviluppato in linguaggio Javascript con l'ausilio della libreria MelonJS. Per realizzarlo però sono stati necessari altri
+			   programmi software come Tiled (per la realizzazione dei percorsi del personaggio nei vari livelli, e per il posizionamento dei nemici e degli ostacoli) e Shoebox (per la gestione dei frame che disposti in sequenza permettono di ottenere l'animazione del movimento del personaggio e dei nemici). 
+			   I vari materiali utilizzati (sprites,tilesets,bonus) sono stati selezionati e scaricati da database opensource come: <br>
+			   <a href="http://www.spriters-resource.com/">spriters resource</a><br>
+			   <a href="http://spritedatabase.net/">sprite database</a><br>
+				Inoltre per presentare il progetto e' stato registrato il seguente video: <br>
+				<iframe width="560px" height="315" src="//www.youtube.com/embed/11iu3bE8oZo" frameborder="0" style="margin:0 auto; position:relative;" allowfullscreen></iframe><br><br>
+				Attualmente (2015) il gioco non e' in aggiornamento, ma verrà al più presto ampliato aggiungendo nuovi livelli giocabili e inserendo nuove funzionalità!!!<br>
+				Per altre curiosità vi prego di contattarmi -><a href="contactme.php">Contact Me</a></p>
+		</section>
+
+		<footer id="foot">
+			<table class="footertab">
+				<tr>
+					<td>
+						<img src="img/blubbycircle.jpg" class="circle"/>
+					</td>
+					<td>
+						B lubby_G ame<br>
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="story.html">THE STORY</a></li>
+							<li><a href="game.html">THE GAME</a></li>
+							<li><a href="contacme.html">CONTACT ME</a></li>
+						</ul>
+					</td>
+					<td>
+						<p>Platform game ideato e progettato da Sandra Gergawi.</p>
+					</td>
+                    <td>
+                    <p>Per richieste, informazioni o critiche visitate la pagina <a href="contactme.html">Contact me</a></p>
+                    </td>
+                    
+                     <td>
+                    <!-- Inizio Codice ShinyStat -->
+					<script type="text/javascript" src="http://codice.shinystat.com/cgi-bin/getcod.cgi?USER=SandraG"></script>
+					<noscript>
+					<h6><a href="http://www.shinystat.com/it/">
+					<img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=SandraG" alt="Contatore per siti" style="border:0px" /></a></h6>
+					</noscript>
+					<!-- Fine Codice ShinyStat -->
+                    </td>
+				</tr>
+			</table>
+		</footer>
+
+<script src="script/jquery-2.1.4.js"></script>
+<script src="script/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+    
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 2000,
+        animationSpeed: 2000,
+        directionNav: false,
+        direction: "horizontal",
+        start: function(){},           
+		before: function(){},           
+		after: function(){},            
+		end: function(){},             
+		added: function(){},            
+		removed: function(){} 
+      });    
+       $('.flex-caption').hide();  
+       $('.flex-caption').fadeIn(200);
+    });
+    
+  </script>
+	</body>
+</html>

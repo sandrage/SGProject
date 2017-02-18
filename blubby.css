@@ -1,0 +1,383 @@
+body, html{
+	margin:0;
+	background-color:#cfcece;
+	padding:0;
+	width:100%;
+    height:auto;
+	overflow-x:hidden;
+}
+@font-face{
+	font-family:'CaviarB';
+	src:url('font/Caviar_Dreams_Bold.ttf');
+}
+
+@font-face{
+	font-family:'Caviar';
+	src:url('font/CaviarDreams.ttf');
+}
+@font-face{
+	font-family:'archive';
+	src:url('font/Archive.otf');
+}
+@font-face{
+	font-family:'bellota';
+	src:url('font/Bellota-Bold.otf');
+}
+.flexslider, .flex-viewport{
+	position:relative;
+	width:601px;
+	height:230px;
+}
+.flexslider{
+	position:relative;
+		box-shadow: 0px 2px 2px 2px #7c7c7e;
+}
+.flexslider .slides{
+	position:relative;
+	height:230px;
+}
+.flexslider .slides li{
+	height:230px;
+	margin:0 auto;
+	padding:0;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+}
+
+.flex-caption h1 {
+	font-family:CaviarB;
+	text-transform: lowercase;
+	font-size:30px;
+	color:#086c9c;
+	opacity:1;
+}
+.flex-caption h1 a{
+	color:#086c9c;
+	text-decoration: none;
+	padding:0;
+	margin:0;
+}
+.flex-caption h1 a:hover{
+	color:#ab15a9;
+}
+.flex-caption{
+	background:white;
+	box-shadow:10px 0px 10px 0px #616263;
+	position:relative;
+	text-align:right;
+	opacity:0.6;
+	padding-right:10px;
+}
+#head{
+	background-image:url(img/header1.jpg);
+	box-shadow:inset 0px 0px 5px 0px #858585;
+	position:relative;
+	background-size:cover;
+	top:0;
+	margin:0;
+	width:100%;
+	min-height:100px;
+	z-index:10;
+}
+iframe{
+	position:relative;
+	border:0;
+    margin:0 auto;
+    width:990px;
+}
+/***Nav***/
+#nav_container{
+	z-index:5;
+}
+#navback { /*MENU*/
+	background:url(img/navback.png);
+	background-size:cover;
+	width:100%;
+}
+#navback ul{
+	position:relative;
+	padding:0;
+	text-align:center;
+	width:393px;
+	min-height:25px;
+	clear:both;
+	color:white;
+	list-style:none;
+	margin:0 auto;
+	font-family:archive;
+	text-decoration:none;
+}
+#navback ul li{
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+#navback ul li a{
+	text-decoration:none;
+	color:white;
+}
+
+#navback ul li a:hover{
+	text-decoration:none;
+	border-bottom:5px solid #09b698;
+	color:#09b698;
+}
+
+#navback ul li a:active{
+	text-decoration:none;
+	border-bottom:5px solid #09b698;
+	color:#09b698;
+}
+#blubbyscritta{ /*blubby logo*/
+	display:block;
+	margin:0 auto;
+	padding-top:10px;
+	width:393px;
+	height:73px;
+}
+/*content*/
+#blubby{
+	margin:0 auto;
+	position:relative;
+	z-index:10;
+	width:651px;
+	height:250px;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+#content
+{
+	position: relative;
+	width:100%;
+	background-color:#a7a7a7;
+	margin:0;
+	margin-top:20px;
+	padding: 20 0 20 0;
+}
+
+#content h1{
+	font-family: CaviarB;
+	font-size:35px;
+	text-align: left;
+	color:#8b2156;
+	padding:0 0 0 50;
+	margin:0;
+}
+#content p{
+	font-family:Caviar;
+	font-size:12pt;
+	font-weight: bold;
+	width:70%;
+	color:#2c3344;
+	text-align:justify;
+    margin:0 auto;
+	text-transform:lowercase;
+}
+#content p img{
+	float:right;
+    padding-left: 10px;
+    padding-right:10px;
+    border-radius:50px;
+    width:126px;
+    height:130px;
+    
+}
+#content p a{
+		font-family:Caviar;
+		font-weight:bold;
+		font-size:20pt;
+		text-align:center;
+		color:#8b2156;
+		text-decoration: none;
+}
+#content p a:hover{
+	color:black;
+}
+#content ul {
+	font-family:Caviar;
+	font-size:12pt;
+	font-weight: bold;
+	width:70%;
+	margin:0 auto;
+	color:#2c3344;
+	text-align:justify;
+	text-transform:lowercase;
+		list-style-image: url(img/x.png);
+
+
+}
+#content ul li{
+}
+.comandi{
+	margin-top:20px;
+	color:#8b2156;
+	text-align:center;
+	font-family:Caviar;
+	font-size:12pt;
+}
+
+#foot{
+	clear:both;
+	position:relative;
+    bottom:0;
+	width:100%;
+	min-height:100px;
+	background:#20564d;
+	color:#666;
+	margin:0;
+	box-shadow: inset 1px 0px 5px 2px #251e22;
+	-webkit-box-shadow: inset 1px 0px 5px 2px #251e22;
+	-o-box-shadow: inset 1px 0px 5px 2px #251e22;
+	-moz-box-shadow: inset 1px 0px 5px 2px #251e22;
+}
+.circle{
+	border-radius:80px;
+	margin-top:10px;
+	max-height:90px;
+}
+.footertab{
+	min-height:100px;
+	position: relative;
+	bottom:0;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.footertab tr td{
+	min-height:100px;
+	min-width:100px;
+	padding:0px 10px 0px 10px;
+	font-family: Caviar;
+	font-size:12pt;
+	color:white;
+	margin:0;
+	padding-left:10px;
+}
+.footertab tr td ul{
+	list-style: none;
+	display:block;
+	margin:0;
+	padding:0;
+	font-family: Caviar_B;
+	font-size:10pt;
+	color:#8b8c8d;
+}
+.footertab tr td ul li{
+	display: block;
+	padding:0;
+	margin:0;
+}
+.footertab tr td p a{
+
+	text-decoration:none;
+    color:white;
+    text-shadow: 4px 1px black;
+}
+.footertab tr td p a:hover{
+	color:#000000;
+    border-bottom:1px dashed #000000;
+}
+.footertab tr td ul li a{
+	color:#8b8c8d;
+	text-decoration: none;
+}
+.footertab tr td ul li a:hover{
+	color:#000000;
+	text-decoration: none;
+	text-shadow:2px 0px 2px 0px #989697;
+	border-left:2px solid #000000;
+}
+
+.footertab tr td p{
+	color:white;
+	font-family:Caviar;
+	max-width:105px;
+	font-size:10pt;
+	text-align:justify;
+}
+
+#formcontact table{
+	width:350px;
+    margin:0 auto;
+    text-align:right;
+    padding:0;
+}
+.inputtd{
+width:80%;
+}
+
+.input{
+	width:100%;
+    margin:0 auto;
+    border:1px dashed #8b2156;
+    background-color:#cfcece;
+    font-family:bellota;
+    font-size:12pt;
+    color:#8b2156;
+    border-radius:25px;
+}
+.input:focus{
+	border:1px dashed #1ca78f;
+    box-shadow:0 0px 1px 1px #545555;
+    border-radius:25px;
+    outline:none;
+}
+#submit{
+background-color:none;
+border:1px dashed #1ca78f;
+width:150px;
+border-radius:50px;
+font-family:CaviarB;
+font-size:15pt;
+color:#1ca78f;
+float:left;
+}
+textarea{
+    margin:0 auto;
+    border:1px dashed #8b2156;
+    background-color:#cfcece;
+    font-family:bellota;
+    font-size:12pt;
+    color:#8b2156;
+    border-radius:15px;
+}
+textarea:focus{
+	border:1px dashed #1ca78f;
+    box-shadow:0 0px 1px 1px #545555;
+    border-radius:5px;
+    outline:none;
+}
+#submit:hover{
+	    box-shadow:0 0px 1px 1px #545555;
+        border:1px dashed #8b2156;
+        color:#8b2156;
+}
+.divform p{
+	font-family:bellota;
+    font-size:10pt;
+    color:#556562;
+    text-align:right;
+}
+.reset{
+float:right;
+background-color:none;
+border:1px dashed #1ca78f;
+width:150px;
+border-radius:50px;
+font-family:CaviarB;
+font-size:15pt;
+color:#1ca78f;
+}
+.reset:hover{
+ 		box-shadow:0 0px 1px 1px #545555;
+        border:1px dashed #8b2156;
+        color:#8b2156;
+}
+.labels{
+    border-bottom:1px dashed #556562;
+
+}

@@ -1,0 +1,160 @@
+<html>
+<meta charset="UTF-8"> 
+
+<head>
+	<title>B lubby_G ame- Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="blubby.css"/>
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script type="text/javascript">
+    function controlloForm()
+    {
+    	var nome=document.contactme.nome.value;
+        var email=document.contactme.email.value;
+        var text=document.contactme.name.value;
+        var trovato=false;
+        var k=0;
+        var j=0;
+        for(i=0;i<email.length;i++)
+        {
+        	if(email.charAt(i)=='@')
+            {
+            	trovato=true;
+            }
+            else if(email.charAt(i)=='.')
+            {
+            	j++;
+            }
+            else{
+           		 k++; //numero di lettere diverse da punto e @
+            }
+        }
+        if(!trovato)
+        {
+        	alert("Email non accettabile. Reinserire.");
+            document.contactme.email.value="";
+        }
+        else if(trovato && (k==0 || j<1))
+        {
+        	alert("Email non accettabile. Reinserire.");
+            document.contactme.email.value="";
+        }
+        if(nome.length==0 || email.length==0 || text.length==0)
+        {
+        	alert("Finchè non verranno inseriti i dati nei rispettivi campi, sara' impossibile mandare l'email");
+            
+        }
+    }
+    </script>
+</head>
+<body>
+		<header id="head">
+			<nav id="nav_container">
+
+				<img src="img/blubbyscritta.png" id="blubbyscritta"/>
+				<div id="navback">
+					<ul>
+					<li><a href="http://blubbygame.altervista.org/">HOME</a></li>
+					<li><a href="story.html">THE STORY</a></li>
+					<li><a href="game.html">THE GAME</a></li>
+					<li><a href="contactme.php">CONTACT ME</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="blubby">
+			<div class="flexslider">
+			<ul class="slides">
+				<li style="background: url(img/blubby1.jpg) center">
+					<div class="flex-caption">
+						<h1><a href="game.html">Try Blubby Game!</a></h1>
+					</div>
+				</li>
+				<li style="background: url(img/blubby2.jpg) center">
+						<div class="flex-caption">
+						<h1>New levels!!!</h1>
+						</div>
+				</li>
+			</ul>
+			</div>
+
+		</section>
+		<section id="content">
+
+			<h1>contact me</h1>
+			<p>avete curiosità, critiche o consigli da propormi? Perfetto! Allora compilate il modulo seguente e riceverete al più presto una risposta!<br></p>
+            <div class="divform">
+            	<form name="contactme" action="contactme.php" method="post" id="formcontact">
+                	<table>
+                    <tr><td class="labels"><p>Nome: </p></td><td class="inputtd"><input type="text" name="nome" class="input"/> </td></tr>
+                    <tr><td class="labels"><p>E-mail:</p></td><td class="inputtd"><input type="text" name="email" class="input"/> </td></tr>
+                    <tr><td class="labels"><p>Oggetto:</p></td><td class="inputtd"><input type="text" name="oggetto" class="input"/></td></tr>
+                    <tr><td colspan="2" class="labels"><p>Messaggio:</p></td></tr>
+                    <tr><td colspan="2"><textarea rows="10" cols="50" name="text" value="..."></textarea></td></tr>
+                    <tr class="subclass"><td><input type="submit" value="INVIO" name="send" id="submit" onclick="controlloForm()"/></td><td><input type="reset" value="reset" name="reset" class="reset"/></td></tr>
+                    </table>
+                </form>
+                </div>
+                
+		</section>
+
+		<footer id="foot">
+			<table class="footertab">
+				<tr>
+					<td>
+						<img src="img/blubbycircle.jpg" class="circle"/>
+					</td>
+					<td>
+						B lubby_G ame<br>
+						<ul>
+							<li><a href="http://blubbygame.altervista.org/">HOME</a></li>
+							<li><a href="story.html">THE STORY</a></li>
+							<li><a href="game.html">THE GAME</a></li>
+							<li><a href="contactme.html">CONTACT ME</a></li>
+						</ul>
+					</td>
+					<td>
+						<p>Platform game ideato e progettato da Sandra Gergawi.</p>
+					</td>
+                     <td>
+                    <p>Per richieste, informazioni o critiche visitate la pagina <a href="contactme.html">Contact me</a></p>
+                    </td>
+                    
+                     <td>
+                    <!-- Inizio Codice ShinyStat -->
+					<script type="text/javascript" src="http://codice.shinystat.com/cgi-bin/getcod.cgi?USER=SandraG"></script>
+					<noscript>
+					<h6><a href="http://www.shinystat.com/it/">
+					<img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=SandraG" alt="Contatore per siti" style="border:0px" /></a></h6>
+					</noscript>
+					<!-- Fine Codice ShinyStat -->
+                    </td>
+				</tr>
+			</table>
+		</footer>
+
+<script src="script/jquery-2.1.4.js"></script>
+<script src="script/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+    
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 2000,
+        animationSpeed: 2000,
+        directionNav: false,
+        direction: "horizontal",
+        start: function(){},           
+		before: function(){},           
+		after: function(){},            
+		end: function(){},             
+		added: function(){},            
+		removed: function(){} 
+      });    
+       $('.flex-caption').hide();  
+       $('.flex-caption').fadeIn(200);
+    });
+    
+  </script>
+	</body>
+</html>

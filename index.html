@@ -1,0 +1,125 @@
+<html>
+<meta charset="UTF-8"> 
+<head>
+	<title>B lubby_G ame</title>
+	<link rel="stylesheet" type="text/css" href="blubby.css"/>
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+	</head>
+	<body>
+		<header id="head">
+			<nav id="nav_container">
+
+				<img src="img/blubbyscritta.png" id="blubbyscritta"/>
+				<div id="navback">
+					<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="story.html">THE STORY</a></li>
+					<li><a href="game.html">THE GAME</a></li>
+					<li><a href="contactme.html">CONTACT ME</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="blubby">
+			<div class="flexslider">
+			<ul class="slides">
+				<li style="background: url(img/blubby1.jpg) center">
+					<div class="flex-caption">
+						<h1><a href="game.html">Try Blubby Game!</a></h1>
+					</div>
+				</li>
+				<li style="background: url(img/blubby2.jpg) center">
+						<div class="flex-caption">
+						<h1>New levels!!!</h1>
+						</div>
+				</li>
+			</ul>
+			</div>
+
+		</section>
+		<section id="content">
+
+			<h1>home</h1>
+			<p><img src="img/avatar.jpg"/><img src="img/avatar2.jpg"/><img src="img/avatar3.jpg"/><img src="img/avatar4.jpg"/>blubby è un platform game progettato e sviluppato in Javascript con l'ausilio della libreria stand-alone e open-source che
+   necessita di un browser compatibile con HTML5: Melonjs. Questa libreria è stata realizzata tra il 2011 e il 2014(anno a cui risale
+   all'ultima patch) e consente: </p>
+   <ul>
+   <li>sviluppo di giochi in 2d</li>
+   <li>integrazione delle mappe dei vari livelli, create con Tiled e che presentano quindi un estensione .tmx</li>
+   <li>gestione dell'audio e degli effetti sonori</li>
+   <li>creazione di nuovi font utilizzabili delle schermate di gioco</li>
+   <li>effetti e animazioni sulle voci di menu</li>
+   <li>compatibilità con tutti i browser</li>
+   <li>gestione delle collisioni tra le entità, le piattaforme e i bonus</li>
+	</ul>
+   <p><a href="http:////melonjs.org/" target="_top">Melonjs Official website</a><br>
+   Lo scopo del giocatore è quello di esplorare l'intero livello ottenendo così un punteggio elevato, e una chiave che gli
+   permetterà di superarlo e di iniziare quello successivo. Durante l'esplorazione però si scontrerà con 
+   eventuali nemici che dovranno essere affrontati ed eliminati così permettendogli di incrementare ulteriormente il bonus.
+   Il giocatore ha a disposizione 3 possibilità + 1, e quest'ultimo è ottenibile durante il suo percorso.
+   Per la creazione di questo platform è stato necessario lo studio delle classi di oggetti della libreria Melonjs e le sue varie
+   funzionalità, l'utilizzo di alcuni strumenti per la gestione dei livelli e delle immagini
+   di gioco, e Photoshop per le varie schermate di Menu, GameOver e di Vittoria.
+  	</p>
+		</section>
+
+		<footer id="foot">
+			<table class="footertab">
+				<tr>
+					<td>
+						<img src="img/blubbycircle.jpg" class="circle"/>
+					</td>
+					<td>
+						B lubby_G ame<br>
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="story.html">THE STORY</a></li>
+							<li><a href="game.html">THE GAME</a></li>
+							<li><a href="contactme.html">CONTACT ME</a></li>
+						</ul>
+					</td>
+					<td>
+						<p>Platform game ideato e progettato da Sandra Gergawi.</p>
+					</td>
+                     <td>
+                    <p>Per richieste, informazioni o critiche visitate la pagina <a href="contactme.html">Contact me</a></p>
+                    </td>
+                    <td>
+                    <!-- Inizio Codice ShinyStat -->
+					<script type="text/javascript" src="http://codice.shinystat.com/cgi-bin/getcod.cgi?USER=SandraG"></script>
+					<noscript>
+					<h6><a href="http://www.shinystat.com/it/">
+					<img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=SandraG" alt="Contatore per siti" style="border:0px" /></a></h6>
+					</noscript>
+					<!-- Fine Codice ShinyStat -->
+                    </td>
+				</tr>
+			</table>
+		</footer>
+
+<script src="script/jquery-2.1.4.js"></script>
+<script src="script/jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+    
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 2000,
+        animationSpeed: 2000,
+        directionNav: false,
+        direction: "horizontal",
+        start: function(){},           
+		before: function(){},           
+		after: function(){},            
+		end: function(){},             
+		added: function(){},            
+		removed: function(){} 
+      });    
+       $('.flex-caption').hide();  
+       $('.flex-caption').fadeIn(200);
+    });
+    
+  </script>
+	</body>
+</html>
